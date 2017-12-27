@@ -2,9 +2,10 @@
   "name": "landing-wood",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --devtool source-map",
+    "build-prod": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/astrohome/landing-wood/issues"
   },
-  "homepage": "https://github.com/astrohome/landing-wood#readme"
+  "homepage": "https://github.com/astrohome/landing-wood#readme",
+  "dependencies": {
+    "bulma": "^0.6.1",
+    "fullpage.js": "^2.9.5"
+  },
+  "devDependencies": {
+    "bulma-loader": "^1.0.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0"
+  }
 }

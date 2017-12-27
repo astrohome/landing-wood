@@ -1,0 +1,14 @@
+{
+    "git.ignoreLimitWarning": true,
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.options": {
+    "extensions": [
+       ".js"
+      ]
+    },
+    "eslint.validate": [
+      { "language": "javascript", "autoFix": true },
+      { "language": "html", "autoFix": true }
+    ]
+}
