@@ -38,11 +38,19 @@ module.exports = {
             { loader: 'sass-loader' }
           ]
         })
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css'
       }
     ]
   },
   plugins: [
     new UglifyJSPlugin({sourceMap: true}),
-    new ExtractTextPlugin('bulma.min.css')
+    new ExtractTextPlugin('bulma.min.css'),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+  })
   ]
 }

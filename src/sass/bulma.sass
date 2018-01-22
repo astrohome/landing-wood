@@ -23,3 +23,31 @@ $family-primary: $family-sans-serif
 
 // 4. Import the rest of Bulma
 @import "../../node_modules/bulma/bulma.sass"
+@import "../../node_modules/fullpage.js/dist/jquery.fullpage.css"
+
+
+$bg-img1: url('https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg')
+$bg-img2: url('http://apps.bostonglobe.com/spotlight/boston-racism-image-reality/assets/image/intro-eyes.jpg')
+$bg-img3: url('https://i.ytimg.com/vi/R28lU1Ua8J0/maxresdefault.jpg')
+
+.section 
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center 80%
+    padding: 0
+.slide
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center 80%
+#section1
+    background-image: $bg-img1
+    
+#slide2-1
+    background-image: $bg-img2
+#slide2-2
+    background-image: $bg-img3
+h1 
+    color: red
+    font-size: 100px
+    text-align: center
+
