@@ -7,3 +7,15 @@ if (process.env.NODE_ENV !== 'production') {
 $(document).ready(function() {
 	$('#fullpage').fullpage()
 })
+
+// open/close menu in mobile
+
+window.openMobileMenu = function(){
+  var menuClass = document.getElementById('main-menu').classList
+  if (menuClass == "navbar-menu"){
+    menuClass.add("is-active")
+  }
+  else {
+    menuClass.remove('is-active')
+  }
+}
